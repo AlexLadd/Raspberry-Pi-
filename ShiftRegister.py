@@ -1,6 +1,6 @@
 import RPi.GPIO as GPIO
 
-# Bit banging class to control a shift register on a raspberry pi
+# Bit banging class to control a shift register on a Raspberry Pi
 class ShiftRegister:
   def __init__(self, data_pin=22, latch_pin=27, clock_pin=17, num_registers=1):
     GPIO.setmode(GPIO.BCM)
