@@ -9,7 +9,7 @@ To write data to a specific pin:
 sr.digitalWrite(pin = 1, mode = 1) or sr.digitalWrite(pin = 1, mode = sr.HIGH)
 
 To write data to multiple pins at once: 
-sr.digitalWrite(pin = [1,2,3], mode = sr.HIGH)
+sr.digitalWrite(pin = [1,2,3], mode = 1)
 
 All pin can be written to HIGH or LOW at once: 
 sr.allPinsHigh() and sr.allPinsLow()
