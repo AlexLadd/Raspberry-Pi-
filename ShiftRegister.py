@@ -27,9 +27,9 @@ class ShiftRegister:
 
     GPIO.output(self.PIN_LATCH, self.LOW)
     for x in range(self.num_registers*8):
+      GPIO.output(self.PIN_CLOCK, self.LOW)
       GPIO.output(self.PIN_DATA, (self.data >> x) & 1)
       GPIO.output(self.PIN_CLOCK, self.HIGH)
-      GPIO.output(self.PIN_CLOCK, self.LOW)
     GPIO.output(self.PIN_LATCH, self.HIGH)
 
   # Set bit in the data byte to the desired mode
